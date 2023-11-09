@@ -9,3 +9,7 @@ class Reagent:
             return f'{self.name}: Potency {self.potency}, Quality {self.quality}'
         else:
             return f'{self.name}: Potency {self.potency}'
+class Herb(Reagent):
+    def refine(self):
+        self.potency += 1.25
+        print(f'{self.name} herb refined. Potency is now {self.potency}.')
