@@ -13,6 +13,10 @@ class Herb(Reagent):
     def refine(self):
         self.potency += 1.25
         print(f'{self.name} herb refined. Potency is now {self.potency}.')
+class Catalyst(Reagent):
+    def refine(self):
+        self.quality += 3.0
+        print(f'{self.name} catalyst refined. Quality is now {self.quality}.')       
 class Potion:
     def __init__(self, name, reagents):
         self.name = name
