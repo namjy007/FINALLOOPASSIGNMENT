@@ -36,3 +36,24 @@ class CatalystLab:
             return next(catalyst for catalyst in self.catalysts if catalyst.name == catalyst_name)
         except StopIteration:
             return None
+# Create an instance of CatalystLab
+lab = CatalystLab()
+
+# Create herb reagents
+herbs = [
+    Herb('Irit', 1.0),
+    Herb('Kwuarm', 1.2),
+]
+
+# Create catalyst reagents
+catalysts = [
+    Catalyst('Prismatic Dust', 1.8, 2.0)
+]
+
+# Add herbs and catalysts to the lab
+for herb in herbs:
+    lab.add_catalyst(herb)
+
+for catalyst in catalysts:
+    lab.add_catalyst(catalyst)
+
