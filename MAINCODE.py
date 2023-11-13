@@ -56,4 +56,6 @@ for herb in herbs:
 
 for catalyst in catalysts:
     lab.add_catalyst(catalyst)
+# Create a potion using the lab's catalysts
+invisibility_potion = Potion('Invisibility', lab.catalysts)
 
