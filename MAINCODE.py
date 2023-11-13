@@ -21,3 +21,6 @@ class Potion:
     def __init__(self, name, reagents):
         self.name = name
         self.reagents = reagents
+    def refine(self):
+        for reagent in self.reagents:
+            reagent.refine()
