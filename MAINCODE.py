@@ -24,3 +24,15 @@ class Potion:
     def refine(self):
         for reagent in self.reagents:
             reagent.refine()
+class CatalystLab:
+    def __init__(self):
+        self.catalysts = []
+
+    def add_catalyst(self, catalyst):
+        self.catalysts.append(catalyst)
+
+    def find_catalyst_by_name(self, catalyst_name):
+        try:
+            return next(catalyst for catalyst in self.catalysts if catalyst.name == catalyst_name)
+        except StopIteration:
+            return None
