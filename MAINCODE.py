@@ -60,4 +60,9 @@ for catalyst in catalysts:
 invisibility_potion = Potion('Invisibility', lab.catalysts)
 # Display the initial properties of the potion
 print(invisibility_potion)
+# Refine the potion
+invisibility_potion.refine()
+
+# Display the refined properties of the potion
+print(invisibility_potion)
 
