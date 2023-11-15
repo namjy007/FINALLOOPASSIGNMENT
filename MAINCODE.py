@@ -58,4 +58,6 @@ for catalyst in catalysts:
     lab.add_catalyst(catalyst)
 # Create a potion using the lab's catalysts
 invisibility_potion = Potion('Invisibility', lab.catalysts)
+# Display the initial properties of the potion
+print(invisibility_potion)
 
